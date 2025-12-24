@@ -37,7 +37,7 @@ class Cat(Common):
             self.knock_back(direction=distance)  # 重用 knock_back 邏輯
             self.has_retreated = True
 
-<<<<<<< HEAD
+
     def take_damage(self, damage, attack_type):
         """處理受到傷害的邏輯，並根據攻擊類型生成特效"""
         self.hp -= damage
@@ -190,8 +190,7 @@ class Cat(Common):
     def get_rect(self):
         return pygame.Rect(self.x, self.y, self.width, self.height)
 
-=======
->>>>>>> 05c21f6a847b8a14872e4b10cbb20036b7796411
+
     def apply_status_effect(self, effect, duration, chance=0.3, target=None):
         """應用狀態效果到目標，考慮機率和免疫"""
         if not target or pygame.time.get_ticks() % 100 < chance * 100:
